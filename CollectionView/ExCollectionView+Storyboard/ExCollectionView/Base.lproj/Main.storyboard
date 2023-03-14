@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X4R-iO-MMY">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="GnQ-wY-kgk">
+            <objects>
+                <viewController id="X4R-iO-MMY" customClass="ViewController" customModule="StroyBoardCollectionView1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fYe-Mx-gWk">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Sqi-qb-Uhb">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Wrv-1s-dCy">
+                                    <size key="itemSize" width="100" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RowCell" id="oa6-Id-L0h" customClass="CustomCell" customModule="StroyBoardCollectionView1" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jDJ-yu-46h">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="jDJ-yu-46h" firstAttribute="top" secondItem="oa6-Id-L0h" secondAttribute="top" id="1KC-rv-49k"/>
+                                            <constraint firstItem="jDJ-yu-46h" firstAttribute="centerX" secondItem="oa6-Id-L0h" secondAttribute="centerX" id="4ft-6e-jff"/>
+                                            <constraint firstItem="jDJ-yu-46h" firstAttribute="centerY" secondItem="oa6-Id-L0h" secondAttribute="centerY" id="CQo-Ok-3OU"/>
+                                            <constraint firstAttribute="trailing" secondItem="jDJ-yu-46h" secondAttribute="trailing" id="FNC-PL-j25"/>
+                                            <constraint firstItem="jDJ-yu-46h" firstAttribute="leading" secondItem="oa6-Id-L0h" secondAttribute="leading" id="PNh-Un-cY3"/>
+                                            <constraint firstAttribute="bottom" secondItem="jDJ-yu-46h" secondAttribute="bottom" id="bxO-kL-aNW"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="image" destination="jDJ-yu-46h" id="cpb-qx-rwy"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="X4R-iO-MMY" id="E7z-AW-jCL"/>
+                                    <outlet property="delegate" destination="X4R-iO-MMY" id="TDS-fz-w55"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xTx-1x-z7G"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Sqi-qb-Uhb" firstAttribute="leading" secondItem="xTx-1x-z7G" secondAttribute="leading" id="B77-TY-7V3"/>
+                            <constraint firstItem="xTx-1x-z7G" firstAttribute="trailing" secondItem="Sqi-qb-Uhb" secondAttribute="trailing" id="Ba7-y3-LnN"/>
+                            <constraint firstItem="xTx-1x-z7G" firstAttribute="bottom" secondItem="Sqi-qb-Uhb" secondAttribute="bottom" id="Ldd-d2-0v9"/>
+                            <constraint firstItem="Sqi-qb-Uhb" firstAttribute="top" secondItem="xTx-1x-z7G" secondAttribute="top" id="ZXk-ZU-rjI"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JVJ-87-LTG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
