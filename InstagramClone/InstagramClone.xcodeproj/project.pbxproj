@@ -17,6 +17,7 @@
 		0E9F949029C13D3A003209C1 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9F948F29C13D3A003209C1 /* TabBarController.swift */; };
 		0E9F949229C149C5003209C1 /* ProfiledViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9F949129C149C5003209C1 /* ProfiledViewController.swift */; };
 		0E9F949429C149F3003209C1 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9F949329C149F3003209C1 /* FeedViewController.swift */; };
+		0E9F949629C14B42003209C1 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9F949529C14B42003209C1 /* FeedTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		0E9F948F29C13D3A003209C1 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		0E9F949129C149C5003209C1 /* ProfiledViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfiledViewController.swift; sourceTree = "<group>"; };
 		0E9F949329C149F3003209C1 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		0E9F949529C14B42003209C1 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				0E9F948D29C13C42003209C1 /* UIButton+Extension.swift */,
 				0E9F948F29C13D3A003209C1 /* TabBarController.swift */,
 				0E9F949329C149F3003209C1 /* FeedViewController.swift */,
+				0E9F949529C14B42003209C1 /* FeedTableViewCell.swift */,
 				0E9F949129C149C5003209C1 /* ProfiledViewController.swift */,
 				0E9F947C29C13B45003209C1 /* Assets.xcassets */,
 				0E9F947E29C13B45003209C1 /* LaunchScreen.storyboard */,
@@ -157,6 +160,7 @@
 			files = (
 				0E9F948E29C13C42003209C1 /* UIButton+Extension.swift in Sources */,
 				0E9F949229C149C5003209C1 /* ProfiledViewController.swift in Sources */,
+				0E9F949629C14B42003209C1 /* FeedTableViewCell.swift in Sources */,
 				0E9F949029C13D3A003209C1 /* TabBarController.swift in Sources */,
 				0E9F947429C13B44003209C1 /* AppDelegate.swift in Sources */,
 				0E9F949429C149F3003209C1 /* FeedViewController.swift in Sources */,
