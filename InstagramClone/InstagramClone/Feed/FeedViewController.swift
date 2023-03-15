@@ -42,7 +42,7 @@ extension FeedViewController: UIImagePickerControllerDelegate, UINavigationContr
         } else if let originalImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             selectImage = originalImage
         }
-        print(selectImage)
+//        print(selectImage)
         
         picker.dismiss(animated: true) { [weak self] in
             let uploadViewController = UploadViewController(uploadImage: selectImage ?? UIImage())

@@ -43,7 +43,7 @@ final class FeedTableViewCell: UITableViewCell {
         $0.textColor = .label
         $0.font = .systemFont(ofSize: 13.0, weight: .medium)
         $0.numberOfLines = 5
-        $0.text = "하하 코딩이 너무 재밌다 하하 코딩이 너무 재밌다 하하 코딩이 너무 재밌다 하하 코딩이 너무 재밌다 하하 코딩이 너무 재밌다 하하 코딩이 너무 재밌다 하하 코딩이 너무 재밌다"
+        $0.text = "은호야 swift 해야지! 은호야 swift 해야지! 은호야 swift 해야지! 은호야 swift 해야지! 은호야 swift 해야지! 은호야 swift 해야지!"
     }
     
     private lazy var dateLabel = UILabel().then {

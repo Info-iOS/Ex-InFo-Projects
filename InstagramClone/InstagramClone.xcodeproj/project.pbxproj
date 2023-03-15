@@ -19,6 +19,8 @@
 		0E9F949429C149F3003209C1 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9F949329C149F3003209C1 /* FeedViewController.swift */; };
 		0E9F949629C14B42003209C1 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9F949529C14B42003209C1 /* FeedTableViewCell.swift */; };
 		0E9F949929C17C41003209C1 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9F949829C17C41003209C1 /* UploadViewController.swift */; };
+		0E9F949B29C18E00003209C1 /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9F949A29C18E00003209C1 /* ProfileCollectionViewCell.swift */; };
+		0E9F949F29C18E33003209C1 /* ProfileDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9F949E29C18E33003209C1 /* ProfileDataView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		0E9F949329C149F3003209C1 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		0E9F949529C14B42003209C1 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		0E9F949829C17C41003209C1 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
+		0E9F949A29C18E00003209C1 /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
+		0E9F949E29C18E33003209C1 /* ProfileDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 				0E9F948D29C13C42003209C1 /* UIButton+Extension.swift */,
 				0E9F948F29C13D3A003209C1 /* TabBarController.swift */,
 				0E9F949129C149C5003209C1 /* ProfileViewController.swift */,
+				0E9F949E29C18E33003209C1 /* ProfileDataView.swift */,
+				0E9F949A29C18E00003209C1 /* ProfileCollectionViewCell.swift */,
 				0E9F949729C17C07003209C1 /* Feed */,
 				0E9F947C29C13B45003209C1 /* Assets.xcassets */,
 				0E9F947E29C13B45003209C1 /* LaunchScreen.storyboard */,
@@ -170,11 +176,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E9F948E29C13C42003209C1 /* UIButton+Extension.swift in Sources */,
+				0E9F949B29C18E00003209C1 /* ProfileCollectionViewCell.swift in Sources */,
 				0E9F949929C17C41003209C1 /* UploadViewController.swift in Sources */,
 				0E9F949229C149C5003209C1 /* ProfileViewController.swift in Sources */,
 				0E9F949629C14B42003209C1 /* FeedTableViewCell.swift in Sources */,
 				0E9F949029C13D3A003209C1 /* TabBarController.swift in Sources */,
 				0E9F947429C13B44003209C1 /* AppDelegate.swift in Sources */,
+				0E9F949F29C18E33003209C1 /* ProfileDataView.swift in Sources */,
 				0E9F949429C149F3003209C1 /* FeedViewController.swift in Sources */,
 				0E9F947629C13B44003209C1 /* SceneDelegate.swift in Sources */,
 			);
