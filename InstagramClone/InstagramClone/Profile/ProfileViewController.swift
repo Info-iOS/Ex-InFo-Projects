@@ -23,7 +23,7 @@ final class ProfileViewController: UIViewController {
     }
     
     private lazy var descriptionLabel = UILabel().then {
-        $0.text = "아아 공부하기 싫다"
+        $0.text = "안녕하세요."
         $0.font = .systemFont(ofSize: 14.0, weight: .medium)
         $0.numberOfLines = 0
     }
@@ -35,6 +35,7 @@ final class ProfileViewController: UIViewController {
         $0.backgroundColor = .systemBlue
         
         $0.layer.cornerRadius = 3.0
+        
     }
     
     private lazy var messageButton = UIButton().then {

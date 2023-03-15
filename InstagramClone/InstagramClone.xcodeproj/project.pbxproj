@@ -76,9 +76,7 @@
 				0E9F947529C13B44003209C1 /* SceneDelegate.swift */,
 				0E9F948D29C13C42003209C1 /* UIButton+Extension.swift */,
 				0E9F948F29C13D3A003209C1 /* TabBarController.swift */,
-				0E9F949129C149C5003209C1 /* ProfileViewController.swift */,
-				0E9F949E29C18E33003209C1 /* ProfileDataView.swift */,
-				0E9F949A29C18E00003209C1 /* ProfileCollectionViewCell.swift */,
+				0E9F94A029C1A9B6003209C1 /* Profile */,
 				0E9F949729C17C07003209C1 /* Feed */,
 				0E9F947C29C13B45003209C1 /* Assets.xcassets */,
 				0E9F947E29C13B45003209C1 /* LaunchScreen.storyboard */,
@@ -95,6 +93,16 @@
 				0E9F949829C17C41003209C1 /* UploadViewController.swift */,
 			);
 			path = Feed;
+			sourceTree = "<group>";
+		};
+		0E9F94A029C1A9B6003209C1 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				0E9F949129C149C5003209C1 /* ProfileViewController.swift */,
+				0E9F949E29C18E33003209C1 /* ProfileDataView.swift */,
+				0E9F949A29C18E00003209C1 /* ProfileCollectionViewCell.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
