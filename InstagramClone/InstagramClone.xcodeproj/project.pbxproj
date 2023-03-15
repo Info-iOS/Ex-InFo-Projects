@@ -15,9 +15,10 @@
 		0E9F948C29C13C00003209C1 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 0E9F948B29C13C00003209C1 /* Then */; };
 		0E9F948E29C13C42003209C1 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9F948D29C13C42003209C1 /* UIButton+Extension.swift */; };
 		0E9F949029C13D3A003209C1 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9F948F29C13D3A003209C1 /* TabBarController.swift */; };
-		0E9F949229C149C5003209C1 /* ProfiledViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9F949129C149C5003209C1 /* ProfiledViewController.swift */; };
+		0E9F949229C149C5003209C1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9F949129C149C5003209C1 /* ProfileViewController.swift */; };
 		0E9F949429C149F3003209C1 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9F949329C149F3003209C1 /* FeedViewController.swift */; };
 		0E9F949629C14B42003209C1 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9F949529C14B42003209C1 /* FeedTableViewCell.swift */; };
+		0E9F949929C17C41003209C1 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9F949829C17C41003209C1 /* UploadViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,9 +30,10 @@
 		0E9F948129C13B45003209C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E9F948D29C13C42003209C1 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		0E9F948F29C13D3A003209C1 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		0E9F949129C149C5003209C1 /* ProfiledViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfiledViewController.swift; sourceTree = "<group>"; };
+		0E9F949129C149C5003209C1 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		0E9F949329C149F3003209C1 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		0E9F949529C14B42003209C1 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		0E9F949829C17C41003209C1 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,14 +72,23 @@
 				0E9F947529C13B44003209C1 /* SceneDelegate.swift */,
 				0E9F948D29C13C42003209C1 /* UIButton+Extension.swift */,
 				0E9F948F29C13D3A003209C1 /* TabBarController.swift */,
-				0E9F949329C149F3003209C1 /* FeedViewController.swift */,
-				0E9F949529C14B42003209C1 /* FeedTableViewCell.swift */,
-				0E9F949129C149C5003209C1 /* ProfiledViewController.swift */,
+				0E9F949129C149C5003209C1 /* ProfileViewController.swift */,
+				0E9F949729C17C07003209C1 /* Feed */,
 				0E9F947C29C13B45003209C1 /* Assets.xcassets */,
 				0E9F947E29C13B45003209C1 /* LaunchScreen.storyboard */,
 				0E9F948129C13B45003209C1 /* Info.plist */,
 			);
 			path = InstagramClone;
+			sourceTree = "<group>";
+		};
+		0E9F949729C17C07003209C1 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				0E9F949329C149F3003209C1 /* FeedViewController.swift */,
+				0E9F949529C14B42003209C1 /* FeedTableViewCell.swift */,
+				0E9F949829C17C41003209C1 /* UploadViewController.swift */,
+			);
+			path = Feed;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,7 +170,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E9F948E29C13C42003209C1 /* UIButton+Extension.swift in Sources */,
-				0E9F949229C149C5003209C1 /* ProfiledViewController.swift in Sources */,
+				0E9F949929C17C41003209C1 /* UploadViewController.swift in Sources */,
+				0E9F949229C149C5003209C1 /* ProfileViewController.swift in Sources */,
 				0E9F949629C14B42003209C1 /* FeedTableViewCell.swift in Sources */,
 				0E9F949029C13D3A003209C1 /* TabBarController.swift in Sources */,
 				0E9F947429C13B44003209C1 /* AppDelegate.swift in Sources */,

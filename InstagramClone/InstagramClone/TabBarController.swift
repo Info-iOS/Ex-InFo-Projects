@@ -21,7 +21,7 @@ final class TabBarController: UITabBarController {
         let plusViewController = UINavigationController(rootViewController: UIViewController())
         plusViewController.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "plus.app"), selectedImage: UIImage(systemName: "plus.app"))
         
-        let profileViewController = UINavigationController(rootViewController: ProfiledViewController())
+        let profileViewController = UINavigationController(rootViewController: ProfileViewController())
         profileViewController.tabBarItem = UITabBarItem(
             title: nil,
             image: UIImage(systemName: "person"),

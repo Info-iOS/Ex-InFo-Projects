@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 import Then
 
-class ProfiledViewController: UIViewController {
+class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

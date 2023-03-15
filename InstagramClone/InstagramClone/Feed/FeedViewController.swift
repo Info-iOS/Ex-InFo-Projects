@@ -27,12 +27,10 @@ class FeedViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         setupNavigationBar()
         setupTableView()
-        
     }
-
 }
 
 extension FeedViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
@@ -47,8 +45,11 @@ extension FeedViewController: UIImagePickerControllerDelegate, UINavigationContr
         print(selectImage)
         
         picker.dismiss(animated: true) { [weak self] in
-//            let uploadViewController = UploadViewController(uploadImage: selectImage ?? UIImage())
-//            let navigationController = UINavigationController(rootViewController: uploadViewController)
+            let uploadViewController = UploadViewController(uploadImage: selectImage ?? UIImage())
+            let navigationController = UINavigationController(rootViewController: uploadViewController)
+            navigationController.modalPresentationStyle = .fullScreen
+            
+            self?.present(navigationController, animated: true)
             
         }
     }
