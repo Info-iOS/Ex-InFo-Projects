@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  ScreenTransition
+//  MoveScreen+Code
 //
-//  Created by 박준하 on 2023/03/16.
+//  Created by 박준하 on 2023/03/17.
 //
 
 import UIKit
