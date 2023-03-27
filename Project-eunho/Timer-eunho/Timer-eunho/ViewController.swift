@@ -85,7 +85,7 @@ class ViewController: UIViewController {
     @objc func addFive(_ sender: Any)
     {
         seconds = seconds + 5
-        timerLable.text = String(seconds )
+        timerLable.text = String(seconds)
     }
     //-5
     @objc func minusFive(_ sender: Any)
