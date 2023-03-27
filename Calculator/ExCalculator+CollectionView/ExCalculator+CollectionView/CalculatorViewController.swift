@@ -49,6 +49,11 @@ class CalculatorViewController: UIViewController {
         
         view.backgroundColor = .white
         layout()
+        navgetionTitle()
+    }
+    
+    private func navgetionTitle() {
+        title = "계산기"
     }
     
     private func layout() {
