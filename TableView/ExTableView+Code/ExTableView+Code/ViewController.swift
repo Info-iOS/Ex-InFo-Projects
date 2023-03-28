@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         view.backgroundColor = .white
-        layout()
+        layout():
     }
     
     func layout() {
@@ -53,7 +53,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             
         default:
 //            cell.userImage = UIImage(named: "")
-//            cell.nameLabel = "(이름 없음)"
+//            cell.nameLabel = "(이름 없음) "
             cell.explanationLabel.text = "내용이 없습니다."
             return cell
         }
