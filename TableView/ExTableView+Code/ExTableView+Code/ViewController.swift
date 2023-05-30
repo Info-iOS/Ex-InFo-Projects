@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         view.backgroundColor = .white
-        layout():
+        layout()
     }
     
     func layout() {
