@@ -8,21 +8,31 @@
 import Moya
 import Foundation
 
+struct MealItem: Codable {
+    let riceType: String
+    let item: String
+    let riceId: Int
+}
+
+struct MealResponse: Codable {
+    let responseList: [MealItem]
+}
+
 enum MealAPI {
-    case getMeal(riceType: String, year: Int, month: Int, day: Int)
+    case today
 }
 
 extension MealAPI: TargetType {
     var baseURL: URL {
-        return URL(string: "http://mukgen.info")!
+        return URL(string: "http://www.mukgen.info")!
     }
     
     var path: String {
-        return "/meal/today/meal"
+        return "/meal/today"
     }
     
     var method: Moya.Method {
-        return .post
+        return .get
     }
     
     var sampleData: Data {
@@ -30,19 +40,12 @@ extension MealAPI: TargetType {
     }
     
     var task: Task {
-        switch self {
-        case let .getMeal(riceType, year, month, day):
-            let parameters: [String: Any] = [
-                "riceType": riceType,
-                "year": year,
-                "month": month,
-                "day": day
-            ]
-            return .requestParameters(parameters: parameters, encoding: JSONEncoding.default)
-        }
+        return .requestPlain
     }
     
     var headers: [String: String]? {
-        return ["Authorization": "Bearer YOUR_TOKEN"]
+        return [
+            "Authorization": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqdW5oYSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE2ODU0MjIxMjksImV4cCI6MTY4NTQyMzkyOX0.l9B6DRPpyyzd1DcmIVQBqEAutypSYSoXG2lf6DAfUZM"
+        ]
     }
 }
