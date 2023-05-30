@@ -1,81 +1,58 @@
-//
-//  ViewController.swift
-//  ExampleURLSession
-//
-//  Created by 박준하 on 2023/05/30.
-//
-
 import UIKit
 
-// Create a request struct
-struct MealRequest: Encodable {
+struct MealItem: Codable {
     let riceType: String
-    let year: Int
-    let month: Int
-    let day: Int
+    let item: String
+    let riceId: Int
 }
 
 struct MealResponse: Codable {
-    let item: String
-    let riceId: Int
+    let responseList: [MealItem]
 }
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        let headers = [
+            "Authorization": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqdW5oYSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE2ODU0MjIxMjksImV4cCI6MTY4NTQyMzkyOX0.l9B6DRPpyyzd1DcmIVQBqEAutypSYSoXG2lf6DAfUZM"
+        ]
         
-        let mealRequest = MealRequest(riceType: "BREAKFAST,LUNCH,DINNER", year: 2023, month: 5, day: 30)
-        
-        do {
-            let jsonData = try JSONEncoder().encode(mealRequest)
-            
-            guard let url = URL(string: "http://mukgen.info/meal/today/meal") else {
-                fatalError("Invalid URL")
-            }
-            
-            var request = URLRequest(url: url)
-            request.httpMethod = "POST"
-            request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-            request.setValue("Bearer YOUR_TOKEN", forHTTPHeaderField: "Authorization")
-            request.httpBody = jsonData
-            
-            let task = URLSession.shared.dataTask(with: request) { data, response, error in
-                if let error = error {
-                    print("Network request failed: \(error)")
-                    return
-                }
-                
-                guard let httpResponse = response as? HTTPURLResponse else {
-                    print("Invalid response")
-                    return
-                }
-                
-                guard (200...299).contains(httpResponse.statusCode) else {
-                    print("HTTP response error: \(httpResponse.statusCode)")
-                    return
-                }
-                
-                guard let responseData = data else {
-                    print("No response data")
-                    return
-                }
-                
-                do {
-                    let decoder = JSONDecoder()
-                    let mealResponse = try decoder.decode(MealResponse.self, from: responseData)
-                    print("Item: \(mealResponse.item)")
-                    print("Rice ID: \(mealResponse.riceId)")
-                } catch {
-                    print("Error decoding response: \(error)")
-                }
-            }
-            
-            task.resume()
-        } catch {
-            print("Encoding error: \(error)")
+        guard let url = URL(string: "http://www.mukgen.info/meal/today") else {
+            print("Invalid URL")
+            return
         }
         
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        request.allHTTPHeaderFields = headers
+        
+        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+            if let error = error {
+                print("Network request failed: \(error)")
+                return
+            }
+            
+            guard let data = data else {
+                print("No data received")
+                return
+            }
+            
+            do {
+                let mealResponse = try JSONDecoder().decode(MealResponse.self, from: data)
+                
+                for item in mealResponse.responseList {
+                    print("Rice Type: \(item.riceType)")
+                    print("Item: \(item.item)")
+                    print("Rice ID: \(item.riceId)")
+                    print("--------------------")
+                }
+            } catch {
+                print("Decoding failed: \(error)")
+            }
+        }
+        
+        task.resume()
     }
 }
-
