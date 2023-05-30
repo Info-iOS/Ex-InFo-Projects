@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  exampleAlamofire
+//  ExampleURLSession
 //
 //  Created by 박준하 on 2023/05/30.
 //
@@ -13,6 +13,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
         self.window = window
