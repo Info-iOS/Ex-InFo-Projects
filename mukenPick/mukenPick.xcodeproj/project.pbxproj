@@ -7,119 +7,110 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E58C4342A25A4F000D8A0F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E58C4332A25A4F000D8A0F4 /* AppDelegate.swift */; };
-		0E58C4362A25A4F000D8A0F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E58C4352A25A4F000D8A0F4 /* SceneDelegate.swift */; };
-		0E58C4382A25A4F000D8A0F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E58C4372A25A4F000D8A0F4 /* ViewController.swift */; };
-		0E58C43D2A25A4F300D8A0F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E58C43C2A25A4F300D8A0F4 /* Assets.xcassets */; };
-		0E58C4402A25A4F300D8A0F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E58C43E2A25A4F300D8A0F4 /* LaunchScreen.storyboard */; };
-		0E58C44B2A25A60F00D8A0F4 /* MealAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E58C44A2A25A60F00D8A0F4 /* MealAPI.swift */; };
-		0EDBD6BC2A2FF47700B8C273 /* AuthAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDBD6BB2A2FF47700B8C273 /* AuthAPI.swift */; };
-		0EDBD6BF2A2FF4CC00B8C273 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 0EDBD6BE2A2FF4CC00B8C273 /* Moya */; };
-		0EDBD6C12A2FF4CC00B8C273 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 0EDBD6C02A2FF4CC00B8C273 /* RxMoya */; };
-		0EDBD6C32A2FF53F00B8C273 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDBD6C22A2FF53F00B8C273 /* AuthService.swift */; };
-		0EDBD6C52A2FF55700B8C273 /* MoyaLoggingPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDBD6C42A2FF55700B8C273 /* MoyaLoggingPlugin.swift */; };
+		0ED8FC442A8222DD008FFC8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED8FC432A8222DD008FFC8E /* AppDelegate.swift */; };
+		0ED8FC462A8222DD008FFC8E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED8FC452A8222DD008FFC8E /* SceneDelegate.swift */; };
+		0ED8FC482A8222DD008FFC8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED8FC472A8222DD008FFC8E /* ViewController.swift */; };
+		0ED8FC4D2A8222DF008FFC8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ED8FC4C2A8222DF008FFC8E /* Assets.xcassets */; };
+		0ED8FC502A8222DF008FFC8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ED8FC4E2A8222DF008FFC8E /* LaunchScreen.storyboard */; };
+		0ED8FC582A82242C008FFC8E /* RiceMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED8FC572A82242C008FFC8E /* RiceMenu.swift */; };
+		0ED8FC5A2A82243A008FFC8E /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED8FC592A82243A008FFC8E /* APIManager.swift */; };
+		0ED8FC5D2A8224FF008FFC8E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0ED8FC5C2A8224FF008FFC8E /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0E58C4302A25A4F000D8A0F4 /* ExampleMoya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleMoya.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0E58C4332A25A4F000D8A0F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0E58C4352A25A4F000D8A0F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0E58C4372A25A4F000D8A0F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0E58C43C2A25A4F300D8A0F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0E58C43F2A25A4F300D8A0F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		0E58C4412A25A4F300D8A0F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0E58C44A2A25A60F00D8A0F4 /* MealAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealAPI.swift; sourceTree = "<group>"; };
-		0EDBD6BB2A2FF47700B8C273 /* AuthAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPI.swift; sourceTree = "<group>"; };
-		0EDBD6C22A2FF53F00B8C273 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
-		0EDBD6C42A2FF55700B8C273 /* MoyaLoggingPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaLoggingPlugin.swift; sourceTree = "<group>"; };
+		0ED8FC402A8222DD008FFC8E /* mukenPick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mukenPick.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ED8FC432A8222DD008FFC8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0ED8FC452A8222DD008FFC8E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0ED8FC472A8222DD008FFC8E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0ED8FC4C2A8222DF008FFC8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0ED8FC4F2A8222DF008FFC8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0ED8FC512A8222DF008FFC8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0ED8FC572A82242C008FFC8E /* RiceMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiceMenu.swift; sourceTree = "<group>"; };
+		0ED8FC592A82243A008FFC8E /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0E58C42D2A25A4F000D8A0F4 /* Frameworks */ = {
+		0ED8FC3D2A8222DD008FFC8E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EDBD6C12A2FF4CC00B8C273 /* RxMoya in Frameworks */,
-				0EDBD6BF2A2FF4CC00B8C273 /* Moya in Frameworks */,
+				0ED8FC5D2A8224FF008FFC8E /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0E58C4272A25A4F000D8A0F4 = {
+		0ED8FC372A8222DD008FFC8E = {
 			isa = PBXGroup;
 			children = (
-				0E58C4322A25A4F000D8A0F4 /* ExampleMoya */,
-				0E58C4312A25A4F000D8A0F4 /* Products */,
+				0ED8FC422A8222DD008FFC8E /* mukenPick */,
+				0ED8FC412A8222DD008FFC8E /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		0E58C4312A25A4F000D8A0F4 /* Products */ = {
+		0ED8FC412A8222DD008FFC8E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0E58C4302A25A4F000D8A0F4 /* ExampleMoya.app */,
+				0ED8FC402A8222DD008FFC8E /* mukenPick.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0E58C4322A25A4F000D8A0F4 /* ExampleMoya */ = {
+		0ED8FC422A8222DD008FFC8E /* mukenPick */ = {
 			isa = PBXGroup;
 			children = (
-				0E58C4332A25A4F000D8A0F4 /* AppDelegate.swift */,
-				0E58C4352A25A4F000D8A0F4 /* SceneDelegate.swift */,
-				0E58C4372A25A4F000D8A0F4 /* ViewController.swift */,
-				0E58C44A2A25A60F00D8A0F4 /* MealAPI.swift */,
-				0EDBD6BB2A2FF47700B8C273 /* AuthAPI.swift */,
-				0EDBD6C22A2FF53F00B8C273 /* AuthService.swift */,
-				0EDBD6C42A2FF55700B8C273 /* MoyaLoggingPlugin.swift */,
-				0E58C43C2A25A4F300D8A0F4 /* Assets.xcassets */,
-				0E58C43E2A25A4F300D8A0F4 /* LaunchScreen.storyboard */,
-				0E58C4412A25A4F300D8A0F4 /* Info.plist */,
+				0ED8FC432A8222DD008FFC8E /* AppDelegate.swift */,
+				0ED8FC452A8222DD008FFC8E /* SceneDelegate.swift */,
+				0ED8FC472A8222DD008FFC8E /* ViewController.swift */,
+				0ED8FC572A82242C008FFC8E /* RiceMenu.swift */,
+				0ED8FC592A82243A008FFC8E /* APIManager.swift */,
+				0ED8FC4C2A8222DF008FFC8E /* Assets.xcassets */,
+				0ED8FC4E2A8222DF008FFC8E /* LaunchScreen.storyboard */,
+				0ED8FC512A8222DF008FFC8E /* Info.plist */,
 			);
-			path = ExampleMoya;
+			path = mukenPick;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0E58C42F2A25A4F000D8A0F4 /* ExampleMoya */ = {
+		0ED8FC3F2A8222DD008FFC8E /* mukenPick */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0E58C4442A25A4F300D8A0F4 /* Build configuration list for PBXNativeTarget "ExampleMoya" */;
+			buildConfigurationList = 0ED8FC542A8222DF008FFC8E /* Build configuration list for PBXNativeTarget "mukenPick" */;
 			buildPhases = (
-				0E58C42C2A25A4F000D8A0F4 /* Sources */,
-				0E58C42D2A25A4F000D8A0F4 /* Frameworks */,
-				0E58C42E2A25A4F000D8A0F4 /* Resources */,
+				0ED8FC3C2A8222DD008FFC8E /* Sources */,
+				0ED8FC3D2A8222DD008FFC8E /* Frameworks */,
+				0ED8FC3E2A8222DD008FFC8E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ExampleMoya;
+			name = mukenPick;
 			packageProductDependencies = (
-				0EDBD6BE2A2FF4CC00B8C273 /* Moya */,
-				0EDBD6C02A2FF4CC00B8C273 /* RxMoya */,
+				0ED8FC5C2A8224FF008FFC8E /* SnapKit */,
 			);
-			productName = ExampleMoya;
-			productReference = 0E58C4302A25A4F000D8A0F4 /* ExampleMoya.app */;
+			productName = mukenPick;
+			productReference = 0ED8FC402A8222DD008FFC8E /* mukenPick.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0E58C4282A25A4F000D8A0F4 /* Project object */ = {
+		0ED8FC382A8222DD008FFC8E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					0E58C42F2A25A4F000D8A0F4 = {
-						CreatedOnToolsVersion = 14.3;
+					0ED8FC3F2A8222DD008FFC8E = {
+						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 0E58C42B2A25A4F000D8A0F4 /* Build configuration list for PBXProject "ExampleMoya" */;
+			buildConfigurationList = 0ED8FC3B2A8222DD008FFC8E /* Build configuration list for PBXProject "mukenPick" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -127,53 +118,51 @@
 				en,
 				Base,
 			);
-			mainGroup = 0E58C4272A25A4F000D8A0F4;
+			mainGroup = 0ED8FC372A8222DD008FFC8E;
 			packageReferences = (
-				0EDBD6BD2A2FF4CC00B8C273 /* XCRemoteSwiftPackageReference "Moya" */,
+				0ED8FC5B2A8224FF008FFC8E /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
-			productRefGroup = 0E58C4312A25A4F000D8A0F4 /* Products */;
+			productRefGroup = 0ED8FC412A8222DD008FFC8E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0E58C42F2A25A4F000D8A0F4 /* ExampleMoya */,
+				0ED8FC3F2A8222DD008FFC8E /* mukenPick */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0E58C42E2A25A4F000D8A0F4 /* Resources */ = {
+		0ED8FC3E2A8222DD008FFC8E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E58C4402A25A4F300D8A0F4 /* LaunchScreen.storyboard in Resources */,
-				0E58C43D2A25A4F300D8A0F4 /* Assets.xcassets in Resources */,
+				0ED8FC502A8222DF008FFC8E /* LaunchScreen.storyboard in Resources */,
+				0ED8FC4D2A8222DF008FFC8E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0E58C42C2A25A4F000D8A0F4 /* Sources */ = {
+		0ED8FC3C2A8222DD008FFC8E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E58C4382A25A4F000D8A0F4 /* ViewController.swift in Sources */,
-				0EDBD6BC2A2FF47700B8C273 /* AuthAPI.swift in Sources */,
-				0E58C44B2A25A60F00D8A0F4 /* MealAPI.swift in Sources */,
-				0EDBD6C32A2FF53F00B8C273 /* AuthService.swift in Sources */,
-				0E58C4342A25A4F000D8A0F4 /* AppDelegate.swift in Sources */,
-				0EDBD6C52A2FF55700B8C273 /* MoyaLoggingPlugin.swift in Sources */,
-				0E58C4362A25A4F000D8A0F4 /* SceneDelegate.swift in Sources */,
+				0ED8FC482A8222DD008FFC8E /* ViewController.swift in Sources */,
+				0ED8FC582A82242C008FFC8E /* RiceMenu.swift in Sources */,
+				0ED8FC5A2A82243A008FFC8E /* APIManager.swift in Sources */,
+				0ED8FC442A8222DD008FFC8E /* AppDelegate.swift in Sources */,
+				0ED8FC462A8222DD008FFC8E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0E58C43E2A25A4F300D8A0F4 /* LaunchScreen.storyboard */ = {
+		0ED8FC4E2A8222DF008FFC8E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0E58C43F2A25A4F300D8A0F4 /* Base */,
+				0ED8FC4F2A8222DF008FFC8E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -181,7 +170,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		0E58C4422A25A4F300D8A0F4 /* Debug */ = {
+		0ED8FC522A8222DF008FFC8E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -241,7 +230,7 @@
 			};
 			name = Debug;
 		};
-		0E58C4432A25A4F300D8A0F4 /* Release */ = {
+		0ED8FC532A8222DF008FFC8E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -295,7 +284,7 @@
 			};
 			name = Release;
 		};
-		0E58C4452A25A4F300D8A0F4 /* Debug */ = {
+		0ED8FC552A8222DF008FFC8E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -304,7 +293,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 92YDTRVDUA;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ExampleMoya/Info.plist;
+				INFOPLIST_FILE = mukenPick/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -315,7 +304,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.junha.ExampleMoya;
+				PRODUCT_BUNDLE_IDENTIFIER = com.junha.mukenPick;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -323,7 +312,7 @@
 			};
 			name = Debug;
 		};
-		0E58C4462A25A4F300D8A0F4 /* Release */ = {
+		0ED8FC562A8222DF008FFC8E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -332,7 +321,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 92YDTRVDUA;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ExampleMoya/Info.plist;
+				INFOPLIST_FILE = mukenPick/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -343,7 +332,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.junha.ExampleMoya;
+				PRODUCT_BUNDLE_IDENTIFIER = com.junha.mukenPick;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -354,20 +343,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0E58C42B2A25A4F000D8A0F4 /* Build configuration list for PBXProject "ExampleMoya" */ = {
+		0ED8FC3B2A8222DD008FFC8E /* Build configuration list for PBXProject "mukenPick" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0E58C4422A25A4F300D8A0F4 /* Debug */,
-				0E58C4432A25A4F300D8A0F4 /* Release */,
+				0ED8FC522A8222DF008FFC8E /* Debug */,
+				0ED8FC532A8222DF008FFC8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0E58C4442A25A4F300D8A0F4 /* Build configuration list for PBXNativeTarget "ExampleMoya" */ = {
+		0ED8FC542A8222DF008FFC8E /* Build configuration list for PBXNativeTarget "mukenPick" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0E58C4452A25A4F300D8A0F4 /* Debug */,
-				0E58C4462A25A4F300D8A0F4 /* Release */,
+				0ED8FC552A8222DF008FFC8E /* Debug */,
+				0ED8FC562A8222DF008FFC8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -375,28 +364,23 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		0EDBD6BD2A2FF4CC00B8C273 /* XCRemoteSwiftPackageReference "Moya" */ = {
+		0ED8FC5B2A8224FF008FFC8E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Moya/Moya.git";
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 15.0.0;
+				minimumVersion = 5.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		0EDBD6BE2A2FF4CC00B8C273 /* Moya */ = {
+		0ED8FC5C2A8224FF008FFC8E /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 0EDBD6BD2A2FF4CC00B8C273 /* XCRemoteSwiftPackageReference "Moya" */;
-			productName = Moya;
-		};
-		0EDBD6C02A2FF4CC00B8C273 /* RxMoya */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0EDBD6BD2A2FF4CC00B8C273 /* XCRemoteSwiftPackageReference "Moya" */;
-			productName = RxMoya;
+			package = 0ED8FC5B2A8224FF008FFC8E /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 0E58C4282A25A4F000D8A0F4 /* Project object */;
+	rootObject = 0ED8FC382A8222DD008FFC8E /* Project object */;
 }

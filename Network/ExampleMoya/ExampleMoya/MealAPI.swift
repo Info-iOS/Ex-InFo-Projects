@@ -45,7 +45,7 @@ extension MealAPI: TargetType {
     
     var headers: [String: String]? {
         return [
-            "Authorization": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqdW5oYSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE2ODU0MjIxMjksImV4cCI6MTY4NTQyMzkyOX0.l9B6DRPpyyzd1DcmIVQBqEAutypSYSoXG2lf6DAfUZM"
+            "Authorization": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqdW5oYSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE2ODU0NDAzMDEsImV4cCI6MTY4NTQ0MjEwMX0.KUMeXE8LEAa8zk6RZMSqFadLLcTqWfK-o2at-zmPHnM"
         ]
     }
 }

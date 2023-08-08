@@ -1,7 +1,11 @@
 import UIKit
 import Moya
+import RxMoya
+import RxSwift
 
 class ViewController: UIViewController {
+    
+    let disposeBag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,5 +31,14 @@ class ViewController: UIViewController {
                 print("Network request failed: \(error)")
             }
         }
+        
+        let authService = AuthService()
+        authService.sendCode(email: "jnxhx@dsm.hs.kr")
+            .subscribe(onSuccess: {
+                print("Code sent successfully")
+            }, onError: { error in
+                print("Error sending code: \(error)")
+            })
+            .disposed(by: disposeBag)
     }
 }
