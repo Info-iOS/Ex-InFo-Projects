@@ -11,7 +11,7 @@ import UIKit
 class APIManager {
     let baseURL = "https://www.mukgen.info"
     let endpoint = "/mukgen-pick"
-    let token = "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJnb29kanVuaGEiLCJpYXQiOjE2OTE0NzkzMDUsImV4cCI6MTY5MTQ4MTEwNX0.q83_J4P7IoqdWc8nyzAULrVFIdNw7qXj8bjL8oo3ic4"
+    let token = "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJnb29kanVuaGEiLCJpYXQiOjE2OTE0ODY4MjAsImV4cCI6MTY5MTQ4ODYyMH0.8PAirGBdkR8evTpKqs04iRTXPVZadRjdRP6hn-ZAWEs"
 
     func fetchRiceMenu(completion: @escaping (RiceMenu?) -> Void) {
         let url = URL(string: baseURL + endpoint)

@@ -21,6 +21,7 @@ class ViewController: UIViewController {
 
             DispatchQueue.main.async {
                 self?.updateUI(with: riceMenu)
+                self?.view.backgroundColor = .red
             }
         }
     }
